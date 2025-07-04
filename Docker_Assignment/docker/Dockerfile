@@ -1,1 +1,5 @@
-# Put your dockerfile here!
+FROM ubuntu:22.04
+
+RUN apt-get update && apt-get install -y cowsay
+
+CMD ["cowsay", "Reproducibility is key!"]
